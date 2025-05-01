@@ -15,7 +15,6 @@ python-dotenv~=1.0
 aiofile~=3.8.8
 deepgram-sdk==3.*
 audioop
-pyaudio
 soundfile
 livekit-plugins-assemblyai
 openai==1.76.2

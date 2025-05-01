@@ -84,7 +84,7 @@ class Wav2lipService:
         await self.publish_audio()
 
         self.TTS = DeepgramTTS(self.audio_handler)
-        self.TTS.send_text("Hello i am george washington.")
+        self.TTS.send_text("Greeting traveler, I am George Washington at your service.")
 
     def async_setup(self):
         asyncio.create_task(self.load_face_model())
