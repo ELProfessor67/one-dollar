@@ -121,11 +121,11 @@ async def entrypoint(ctx: JobContext):
 
     wav2lipService.async_setup()
         # Define the sync handler with correct parameters
-    def data_received(event):
+    async def data_received(event):
         data = event.data.decode("utf-8")
         data = json.loads(data)
         message = data.get('message')
-        wav2lipService.send(message)     
+        await wav2lipService.send(message)     
     
     
     ctx.room.on("data_received", data_received)

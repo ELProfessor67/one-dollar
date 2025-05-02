@@ -17,3 +17,4 @@ deepgram-sdk==3.*
 soundfile
 livekit-plugins-assemblyai
 openai==1.76.2
+smallestai
