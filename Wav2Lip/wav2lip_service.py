@@ -101,7 +101,7 @@ class Wav2lipService:
             simulcast=True,
             video_encoding=rtc.VideoEncoding(
                 max_framerate=self.fps,
-                max_bitrate=3_000_000
+                max_bitrate=9_000_000
             ),
             # video_codec=rtc.VideoCodec.H264,
             # video_codec=rtc.VideoCodec.DESCRIPTOR,
