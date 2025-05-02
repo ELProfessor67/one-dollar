@@ -14,7 +14,6 @@ livekit-plugins-rag>=0.2.4
 python-dotenv~=1.0
 aiofile~=3.8.8
 deepgram-sdk==3.*
-audioop
 soundfile
 livekit-plugins-assemblyai
 openai==1.76.2

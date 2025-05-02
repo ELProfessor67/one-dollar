@@ -214,6 +214,7 @@ class Wav2lipService:
         gen = self.datagen(full_frames.copy(),face_coords, mel_chunks)
 
         frames_store = []
+        s = time()
         for i, (img_batch, mel_batch, frames, coords) in enumerate(tqdm(gen,total=int(np.ceil(float(len(mel_chunks))/batch_size)))):
             
         
@@ -240,7 +241,7 @@ class Wav2lipService:
                    
                     
         self.generated_frames.append([chunk,frames_store])
-        print("frame generated")
+        print(f"frame generated {time() - s}")
         if self.isSendingFrame == False:
             self.isSendingFrame = True
         

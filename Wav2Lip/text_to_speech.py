@@ -19,7 +19,7 @@ class DeepgramTTS():
         data = {
             "inputs": [text],
             "target_language_code": "en-IN",
-            "speaker": "meera",
+            "speaker": "arvind",
             "pitch": 0,
             "pace": 1,
             "loudness": 1.2,
